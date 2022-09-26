@@ -1,5 +1,7 @@
 // ASSESSMENT 3: Coding Practical Questions with Jest
 
+// const { it } = require("node:test")
+
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
 // If you get stuck, please leave comments to help us understand your thought process
@@ -12,6 +14,15 @@
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
 
+// describe("greaterThanTwo", () => {
+//   it("returns an array that length containing the numbers of the Fibonacci sequence", () => {
+//     expect(greaterThanTwo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
+//     expect(greaterThanTwo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+//   })
+// })
+
+// ReferenceError: greaterThanTwo is not defined
+
 // a) Create a test with expect statements for each of the variables provided.
 
 const fibLength1 = 6
@@ -21,6 +32,22 @@ const fibLength2 = 10
 // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 // b) Create the function that makes the test pass.
+
+// PSUEDO CODE:
+// Create a function named greaterThanTwo.
+// Create two variables, one that is equal to 0, and one that is equal to 1 as this is what the Fibonacci sequence starts with.
+// Create the starting sequence (n2) at 1.
+// Now the for loop is starting at 2 and we must build on it from there meaning the previous values will be added and once they are added we will get the new number.
+
+const greaterThanTwo = (num) => {
+  let n1 = [0, 1]
+  let n2 = [1]
+  for (let i = 2; i < num; i++) {
+
+  }
+}
+
+
 
 // --------------------2) Create a function that takes in an object and returns an array of the numbers sorted from least to greatest.
 // Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
