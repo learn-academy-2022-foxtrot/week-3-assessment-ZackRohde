@@ -16,12 +16,12 @@
 
 //  a) Create a test with expect statements for each of the variables provided.
 
-describe("greaterThanTwo", () => {
-  it("returns an array that length containing the numbers of the Fibonacci sequence", () => {
-    expect(greaterThanTwo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
-    expect(greaterThanTwo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
-  })
-})
+// describe("greaterThanTwo", () => {
+//   it("returns an array that length containing the numbers of the Fibonacci sequence", () => {
+//     expect(greaterThanTwo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
+//     expect(greaterThanTwo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+//   })
+// })
 
 //Good Fail.
 // // ReferenceError: greaterThanTwo is not defined
@@ -62,6 +62,7 @@ describe("leastToGreatest", () => {
     expect(leastToGreatest(studyMinutesWeek2)).toEqual([10, 15, 20, 45, 60, 65, 100])
   })
 })
+
 // Good Fail.
 // ReferenceError: leastToGreatest is not defined
 
@@ -89,14 +90,21 @@ const studyMinutesWeek2 = {
 
 // b) Create the function that makes the test pass.
 
-const leastToGreatest = (array) => {
-  let newArray = []
+// PSUEDO CODE:
+// Create a function named leastToGreatest with an object as the parameter.
+// We then must use a new variable name (newArray) and use object.values to return an array of the properties own values in the same order into an array.
+// We then must sort the numbers least to greatest.
+
+const leastToGreatest = (object) => {
+  let newArray = Object.values(object).sort((a, b) => a - b)
+  return newArray
 }
-console.log(newArray(objects.values)(studyMinutesWeek1))
 
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
 // a) Create a test with expect statements for each of the variables provided.
+
+
 
 const accountTransactions1 = [100, -17, -23, -9]
 // Expected output: [100, 83, 60, 51]
