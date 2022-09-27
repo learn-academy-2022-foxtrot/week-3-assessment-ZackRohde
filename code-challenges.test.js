@@ -40,14 +40,14 @@ const fibLength2 = 10
 // Now the for loop is starting at 2 and we must build on it from there meaning the previous values will be added and once they are added we will get the new number.
 
 const greaterThanTwo = (num) => {
-  let n1 = [0, 1]
+  let n1 = [1, 1]
   let n2 = [1]
   for (let i = 2; i < num; i++) {
     n1[i] = n1[i - 2] + n1[i - 1]
   }
   return n1
 }
-console.log(greaterThanTwo(5))
+console.log(greaterThanTwo(10))
 
 
 // --------------------2) Create a function that takes in an object and returns an array of the numbers sorted from least to greatest.
