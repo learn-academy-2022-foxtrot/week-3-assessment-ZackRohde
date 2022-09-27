@@ -48,12 +48,12 @@ Researched answer: div is used for the styling of elements on a page and also is
 
 ## Looking Ahead: Terms for Next Week
 
-1. Object-oriented programming:
+1. Object-oriented programming: a modeling system that has a collection of objects and each of those objects represent a piece of the overall system. 
 
-2. Ruby:
+2. Ruby: An open source object oriented scripting language. Scripting languages don't talk directly to the hardware. It's turned into a code by parsing (compiling) text that's taken from an interpreter. 
 
-3. Implicit return:
+3. Implicit return: A function that's return keywords are never used, but the values still get returned. 
 
-4. Ruby blocks:
+4. Ruby blocks: Single line of code or mulitiple lines of code that are put inside the "do" and "end" keywords.
 
-5. Ruby hashes:
+5. Ruby hashes: A collection of key-value pairs.
