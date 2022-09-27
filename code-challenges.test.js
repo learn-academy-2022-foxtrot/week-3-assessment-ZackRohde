@@ -16,12 +16,12 @@
 
 //  a) Create a test with expect statements for each of the variables provided.
 
-// describe("greaterThanTwo", () => {
-//   it("returns an array that length containing the numbers of the Fibonacci sequence", () => {
-//     expect(greaterThanTwo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
-//     expect(greaterThanTwo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
-//   })
-// })
+describe("greaterThanTwo", () => {
+  it("returns an array that length containing the numbers of the Fibonacci sequence", () => {
+    expect(greaterThanTwo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
+    expect(greaterThanTwo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+  })
+})
 
 //Good Fail.
 // // ReferenceError: greaterThanTwo is not defined
@@ -104,15 +104,36 @@ const leastToGreatest = (object) => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
+describe("accSum", () => {
+  it("takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.", () => {
+    expect(accSum(accountTransactions1)).toEqual([100, 83, 60, 51])
+    expect(accSum(accountTransactions2)).toEqual([250, 161, 261, 165])
+    expect(Accsum(accountTransactions3)).toEqual([])
+  })
+})
 
+// Good Fail.
+// ReferenceError: accSum is not defined
 
 const accountTransactions1 = [100, -17, -23, -9]
 // Expected output: [100, 83, 60, 51]
-
 const accountTransactions2 = [250, -89, 100, -96]
 // Expected output: [250, 161, 261, 165]
-
 const accountTransactions3 = []
 // Expected output: []
 
 // b) Create the function that makes the test pass.
+
+// PSEUDO CODE:
+// Create a function (accSum).
+// I need to iterate through the array and return the accumlative sum of each element
+// I'll also return the empty array since it's null
+// I have no clue how to do this and I don't want to copy anything I find
+
+const accSum = (array) => {
+  let emptyArr = []
+  if (accSum === null) {
+    console.log("[]")
+  } else if (i = 0; i < array.length; i++)
+
+} 
